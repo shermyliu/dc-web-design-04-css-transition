@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>文創二_劉育全_CSS-Transition練習</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .mother {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mother div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 160px;
+            margin: 32px;
+            -moz-transition: all 400ms ease-in-out 0s;
+            -webkit-transition: all 400ms ease-in-out 0s;
+            transition: all 400ms ease-in-out 0s;
+            font-size: 24px;
+        }
+
+        body div:hover {
+            font-size: 32px;
+        }
+
+        .movement {
+            background-color: darkseagreen;
+        }
+
+        .movement:hover {
+            background-color: aquamarine;
+            transform: translate(40px, 40px);
+        }
+
+        .rotation {
+            background-color: goldenrod;
+        }
+
+        .rotation:hover {
+            background-color: blanchedalmond;
+            transform: rotate(45deg);
+        }
+
+        .mag {
+            background-color: darksalmon;
+        }
+
+        .mag:hover {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mother">
+        <div class="movement">位移</div>
+        <div class="rotation">旋轉</div>
+        <div class="mag">縮放</div>
+    </div>
+</body>
+
+</html>
